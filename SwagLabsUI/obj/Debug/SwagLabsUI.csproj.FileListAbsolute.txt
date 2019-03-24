@@ -1,0 +1,8 @@
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\bin\Debug\SwagLabsUI.dll
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\bin\Debug\SwagLabsUI.pdb
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\bin\Debug\WebDriver.dll
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\bin\Debug\WebDriver.xml
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\obj\Debug\SwagLabsUI.csprojResolveAssemblyReference.cache
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\obj\Debug\SwagLabsUI.dll
+J:\Jaks Sandbox Apps\JaksMovieDBProject\SwagLabsUI\obj\Debug\SwagLabsUI.pdb
