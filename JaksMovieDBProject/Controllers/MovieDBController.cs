@@ -44,5 +44,14 @@ namespace JaksMovieDBProject.Controllers
             return movieDetailsNowPlaying;
         }
 
+        public async Task<MovieDetailsDTO> GetUpcomingMovieDetail()
+        {
+            _uri = "https://api.themoviedb.org/3/movie/upcoming?api_key={_key}&language=en-US&page=1";
+
+            var movieDetailsUpcomingTitles = new MovieDetailsDTO();
+            await _movieDbApiCall.CallMovieDBApi(_uri);
+            return movieDetailsUpcomingTitles;
+        }
+
     }
 }

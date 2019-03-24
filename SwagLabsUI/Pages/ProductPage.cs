@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
 using WebDriver = SwagLabsUI.WebDriver;
 
 namespace SwagLabsUI.Pages
@@ -16,14 +17,18 @@ namespace SwagLabsUI.Pages
             _webdriver = webDriver;
         }
 
-        public void AddBikeLightToCart()
+        public void AddItemToCart(string name)
         {
-            _webdriver.FindElementByXPath("//*[@id='inventory_container']/div/div[2]/div[3]/button").Click();
-        }
-
-        public void AddOnesieToCart()
-        {
-            _webdriver.FindElementByXPath("//*[@id='inventory_container']/div/div[5]/div[3]/button").Click();
+            var itemList = _webdriver.FindElementsbyClass("inventory_item");
+            foreach(var i in itemList)
+            {
+                if(i.Text.Contains(name))
+                {
+                    var myElement = i.FindElement(By.ClassName("pricebar"));
+                    var addToCart = myElement.FindElement(By.XPath("./button"));
+                    addToCart.Click();
+                }
+            }
         }
     }
 }

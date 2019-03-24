@@ -32,8 +32,9 @@ namespace SwagLabsUI
             loginPage.InputPassword(password);
             loginPage.ClickLogin();
 
-            productPage.AddBikeLightToCart();
-            productPage.AddOnesieToCart();
+
+            productPage.AddItemToCart(bikelight);
+            productPage.AddItemToCart(onesie);
             cartPage.GoToCart();
 
             var cart = cartPage.GetItemsInCart();

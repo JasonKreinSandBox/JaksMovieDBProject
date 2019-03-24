@@ -25,7 +25,6 @@ namespace SwagLabsUI
         public void InputUserName(string name)
         {
             _webDriver.FindElementById("user-name").SendKeys(name);
-           //_webDriver.FindElementByXPath("//*[@id='user-name']").SendKeys("standard_user");
         }
 
         public void InputPassword(string password)

@@ -72,7 +72,6 @@ J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Se
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Security.Twitter.xml
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Web.Http.Owin.xml
-J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\obj\Debug\JaksMovieDBProject.csprojResolveAssemblyReference.cache
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\obj\Debug\JaksMovieDBProject.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\obj\Debug\JaksMovieDBProject.pdb
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.dll

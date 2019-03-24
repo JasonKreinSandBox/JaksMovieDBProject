@@ -21,15 +21,10 @@ namespace JaksMovieDBProject.UnitTests
             _movieDBController = new MovieDBController(movieDBApiKey);
         }
 
-
-        [TestMethod]
-        public void MakeAPICallToMovieDB()
-        {
-
-            var didThisWork = _movieDBController.GetLatestMovies();
-            Assert.AreEqual("", didThisWork);
-        }
-
+        /// <summary>
+        /// Get Movie Details Succeed
+        /// </summary>
+        /// <param name="movieId"></param>
         [TestMethod]
         public void GetMovieDetails(int movieId)
         {
@@ -37,6 +32,10 @@ namespace JaksMovieDBProject.UnitTests
             //Because this test is just validating the call for a single id, if the test returns details it passes.
         }
 
+        /// <summary>
+        /// Fail to get details by passing a bad Id. Ensure error handling and status code verification is good.
+        /// </summary>
+        /// <param name="movieId"></param>
         [TestMethod]
         public void FailToGetMovieDetailsForBadID(int movieId)
         {
@@ -44,6 +43,10 @@ namespace JaksMovieDBProject.UnitTests
             //an error code from the api call. Handle the code properly.
         }
 
+        /// <summary>
+        ///  Get Release Dates for Movie Success Test, call should be made with valid movie Id and should return results.
+        /// </summary>
+        /// <param name="movieId"></param>
         [TestMethod]
         public void GetReleaseDates(int movieId)
         {
@@ -51,18 +54,52 @@ namespace JaksMovieDBProject.UnitTests
             //know the movie requested dates for so we could validate in returned correct data. Fail test for error code or exception
         }
 
+        /// <summary>
+        ///  This is a negative test. Verify error code and exception handling for this case are sufficient.
+        /// </summary>
+        /// <param name="movieId"></param>
+        [TestMethod]
+        public void GetReleaseDatesFail(int movieId)
+        {
+            //TODO: Given a bad ID, ensure the api call returns proper error code and code and exception are handled.
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void GetLatestTitles()
         {
-
+            //TODO: Make the API and make sure data is returned succesfully
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        [TestMethod]
+        public void GetLatestTitlesErrorHandling()
+        {
+            //TODO: Make the API and make sure error code and exception handling are successfully elegant.
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void GetNowPlaying()
         {
-            MovieDBController _movieDBController = new MovieDBController("");
             var moviesPlayingNow = _movieDBController.GetNowPlaying();
+            Assert.IsNotNull(moviesPlayingNow);
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        [TestMethod]
+        public void MakeAPICallToMovieDB()
+        {
+            var upcomingTitles = _movieDBController.GetUpcomingMovieDetail();
+            Assert.IsNotNull(upcomingTitles);
         }
     }
 }

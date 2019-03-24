@@ -128,19 +128,17 @@ namespace SwagLabsUI
             return _driver.FindElements(by);
         }
 
-        public IWebElement GetInventoryItemElementByName(string name)
+        public List<IWebElement> FindElementsbyClass(string className)
         {
-            var inventoryList = new List<string>();
-            var inventory = FindElements(By.ClassName("inventory_item"));
-            foreach(var item in inventory)
+            var inventoryList = new List<IWebElement>();
+            var listOfElementsByClassName = FindElements(By.ClassName(className));
+            foreach(var i in listOfElementsByClassName)
             {
-                if(item.Text.Contains(name))
-                {
-                    return item;
-                }
+                inventoryList.Add(i);
             }
-            return null;
+            return inventoryList;
         }
+
         public void Dispose()
         {
             _driver.Dispose();
