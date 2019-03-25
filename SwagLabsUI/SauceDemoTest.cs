@@ -21,7 +21,7 @@ namespace SwagLabsUI
         const string bikelight = "Sauce Labs Bike Light";
 
         [TestMethod]
-        public void TestBrowser()
+        public void AddItemsToCartValidateCartHasItems()
         {
             var TestBrowser = new WebDriver();
             loginPage = new LoginPage(TestBrowser);
