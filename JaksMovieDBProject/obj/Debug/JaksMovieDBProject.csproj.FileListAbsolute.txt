@@ -29,8 +29,10 @@ J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Se
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Security.OAuth.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Security.Twitter.dll
+J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Web.Infrastructure.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Newtonsoft.Json.dll
+J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Owin.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Net.Http.Formatting.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Web.Helpers.dll
@@ -45,6 +47,8 @@ J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Web.WebPag
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Web.WebPages.Razor.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\WebGrease.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.pdb
+J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.xml
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Newtonsoft.Json.xml
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Net.Http.Formatting.xml
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Web.Helpers.xml
@@ -74,7 +78,3 @@ J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.Owin.Se
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\System.Web.Http.Owin.xml
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\obj\Debug\JaksMovieDBProject.dll
 J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\obj\Debug\JaksMovieDBProject.pdb
-J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.dll
-J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.pdb
-J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\nunit.framework.xml
-J:\Jaks Sandbox Apps\JaksMovieDBProject\JaksMovieDBProject\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll

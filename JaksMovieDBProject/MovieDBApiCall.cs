@@ -11,9 +11,10 @@ namespace JaksMovieDBProject
     public class MovieDBApiCall
     {
         private string _uri;
+        HttpResponseMessage _response;
         public MovieDBApiCall()
         {
-
+            _response = new HttpResponseMessage();
         }
         public async Task<MovieDetailsDTO> CallMovieDBApi(string uri)
         {
@@ -23,12 +24,10 @@ namespace JaksMovieDBProject
             {
                 try
                 {
-                    HttpResponseMessage response = await client.GetAsync(_uri);
-                    response.EnsureSuccessStatusCode();
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    var jsonData = JsonConvert.DeserializeObject(responseBody);
-                    var jsonMovieDetails = JsonConvert.DeserializeObject<MovieDetailsDTO>(responseBody);
-                    return movieData;
+                    _response = await client.GetAsync(_uri);
+                    _response.EnsureSuccessStatusCode();
+                    string responseBody = await _response.Content.ReadAsStringAsync();
+                    movieData = JsonConvert.DeserializeObject<MovieDetailsDTO>(responseBody);
                 }
                 catch (HttpRequestException e)
                 {

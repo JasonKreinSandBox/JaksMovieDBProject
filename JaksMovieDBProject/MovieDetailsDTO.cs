@@ -7,13 +7,8 @@ namespace JaksMovieDBProject
 {
     public class MovieDetailsDTO
     {
-        public int MovieId { get; set; }
-        public string Title { get; set; }
-        public string TagLine { get; set; }
-        public int ReleaseDate { get; set; }
-        public string Status { get; set; }
-        public string OverView { get; set; }
-        public int RunTime { get; set; }
-        public int IMDBId { get; set; }
+        public int id { get; set; }
+        public string title { get; set; }
+        public string overview { get; set; }
     }
 }
