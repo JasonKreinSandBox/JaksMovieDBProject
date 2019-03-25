@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web;
-using Newtonsoft.Json;
 
 namespace JaksMovieDBProject
 {
-    public class MovieDBApiCall
+  public class MovieDBApiCall
     {
         private string _uri;
         HttpResponseMessage _response;

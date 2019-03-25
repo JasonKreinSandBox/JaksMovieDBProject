@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Newtonsoft.Json;
+﻿using JaksMovieDBProject.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using JaksMovieDBProject.Controllers;
 
 namespace JaksMovieDBProject.Tests
 {
