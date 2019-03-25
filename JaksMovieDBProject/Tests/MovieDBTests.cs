@@ -18,8 +18,11 @@ namespace JaksMovieDBProject.Tests
     [TestMethod]
     public void GetMovieDetailsById(int id)
     {
-      var details = _movieDBController.GetMovieDetails("166428");
-      Assert.IsNotNull(details);
+      var movieDetails = _movieDBController.GetMovieDetails("166428");
+      Assert.IsNotNull(movieDetails);
+      Assert.IsInstanceOfType(movieDetails, typeof(MovieDetailsDTO));
+      Assert.IsNull(movieDetails.Exception, "API call threw exception");
+      Assert.AreSame(movieDetails.GetType().GetProperty("id"), id);
     }
 
     [TestMethod]
@@ -27,6 +30,8 @@ namespace JaksMovieDBProject.Tests
     {
       var moviesPlayingNow = _movieDBController.GetNowPlaying();
       Assert.IsNotNull(moviesPlayingNow);
+      Assert.IsInstanceOfType(moviesPlayingNow, typeof(MovieDetailsDTO));
+      Assert.IsNull(moviesPlayingNow.Exception, "API call threw exception");
     }
 
     [TestMethod]
@@ -34,6 +39,8 @@ namespace JaksMovieDBProject.Tests
     {
       var upcomingTitles = _movieDBController.GetUpcomingMovieDetail();
       Assert.IsNotNull(upcomingTitles);
+      Assert.IsInstanceOfType(upcomingTitles, typeof(MovieDetailsDTO));
+      Assert.IsNull(upcomingTitles.Exception, "API call threw exception");
     }
 
     [TestMethod]

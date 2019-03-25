@@ -17,7 +17,7 @@ namespace JaksMovieDBProject.Controllers
 
     public async Task<MovieDetailsDTO> GetLatestMovies()
     {
-      _uri = $"https://api.themoviedb.org/3/movie/latest?api_key={_key}&language=en-US";
+      _uri = $"movie/latest?api_key={_key}&language=en-US";
       var detailLatest = new MovieDetailsDTO();
       try
       {
@@ -32,7 +32,7 @@ namespace JaksMovieDBProject.Controllers
 
     public async Task<MovieDetailsDTO> GetMovieDetails(string movieId)
     {
-      _uri = $"https://api.themoviedb.org/3/movie/{movieId}?api_key={_key}&language=en-US";
+      _uri = $"movie/{movieId}?api_key={_key}&language=en-US";
       var movieDetailsForId = new MovieDetailsDTO();
       try
       {
@@ -47,7 +47,7 @@ namespace JaksMovieDBProject.Controllers
 
     public async Task<MovieDetailsDTO> GetNowPlaying()
     {
-      _uri = $"https://api.themoviedb.org/3/movie/now_playing?api_key={_key}&language=en-US&page=1";
+      _uri = $"movie/now_playing?api_key={_key}&language=en-US&page=1";
       var movieDetailsNowPlaying = new MovieDetailsDTO();
       try
       {
@@ -63,7 +63,7 @@ namespace JaksMovieDBProject.Controllers
 
     public async Task<MovieDetailsDTO> GetUpcomingMovieDetail()
     {
-      _uri = "https://api.themoviedb.org/3/movie/upcoming?api_key={_key}&language=en-US&page=1";
+      _uri = "upcoming?api_key={_key}&language=en-US&page=1";
 
       var movieDetailsUpcomingTitles = new MovieDetailsDTO();
       try
